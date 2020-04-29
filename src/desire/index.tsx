@@ -12,29 +12,28 @@ class Desire extends React.Component {
 
     onClickJoke = () => {
         this.setState({
-            contentComponent: <Text />,
+            contentComponent: <Text type={"JOKE"} key="1"/>,
         });
     };
 
     onClickSoup = () => {
         this.setState({
-            contentComponent: <Text />,
+            contentComponent: <Text type={"ADVICE"} key="2" />,
         });
     };
     onClickDance = () => { 
         this.setState({
-            contentComponent: <Dance />,
+            contentComponent: <Dance key="3" />,
         });
     };
     onClickBlood = () => { 
-
         this.setState({
-            contentComponent: <Blood />,
+            contentComponent: <Blood key="4" />,
         });
     };
     onClickSuprise = () => { 
         this.setState({
-            contentComponent: <Text />,
+            contentComponent: <Text type={"JOKE"}  key="5"/>,
         });
     };
 
@@ -48,19 +47,19 @@ class Desire extends React.Component {
             <ListGroup.Item>
                 <ListGroup.Item onClick={this.onClickJoke} action variant="primary">
                     Tell me a joke!
-        </ListGroup.Item>
+                </ListGroup.Item>
                 <ListGroup.Item onClick={this.onClickSoup} action variant="secondary">
                     Drink a cup of chicken soup!
-        </ListGroup.Item>
+                </ListGroup.Item>
                 <ListGroup.Item onClick={this.onClickDance} action variant="success">
                     Dancing for me!
-        </ListGroup.Item>
+                </ListGroup.Item>
                 <ListGroup.Item onClick={this.onClickBlood} action variant="danger">
                     Warm my blood!
-        </ListGroup.Item>
+                </ListGroup.Item>
                 <ListGroup.Item onClick={this.onClickSuprise} action variant="dark">
                     I don't care, suprise me!
-        </ListGroup.Item>
+                </ListGroup.Item>
             </ListGroup.Item>
         );
     }

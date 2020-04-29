@@ -1,6 +1,10 @@
 # self-isolation-fun-front
-Accompany Buddy front end
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Accompany Buddy front end.
+I did this only because I want to experience full stack technique. Fun is the derivatives.
+
+## Stack
+- Typescript
+- Unit test
 
 ## Available Scripts
 
