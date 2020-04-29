@@ -1,6 +1,6 @@
 # self-isolation-fun-front
-Accompany Buddy front end.
-I did this only because I want to experience full stack technique. Fun is the derivatives.
+Accompany Buddy front end. 
+Having fun is the top mission.
 
 ## Stack
 - Typescript
