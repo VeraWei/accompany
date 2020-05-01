@@ -28,8 +28,8 @@ jobs:
       run: npm install
     - name: Commit files
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "vera.wqm@gmail.com"
+        git config --local user.name "vera wei"
         git commit -m "Add changes" -a
     # Runs a set of commands using the runners shell
     - name: Deploy
