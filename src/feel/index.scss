@@ -62,6 +62,16 @@ li {
   display: block;
 }
 
+%mouth--sad {
+  @extend %face;
+  height: 9px;
+  width: 18px;
+  border-radius: 18px 18px 0 0;
+  border-top: 2px solid $white;
+  background-color: $peach;
+  display: block;
+}
+
 %mouth--teeth {
   @extend %face;
   height: 9px;
@@ -105,6 +115,19 @@ li {
   height: $eye-size;
   width: $eye-size;
   border-radius: 50%;
+}
+
+
+%eye--downturned {
+  @extend %face;
+  background-color: $yellow;
+  border: 1px solid $black;
+  border-bottom: 0;
+  content: "";
+  display: inline-block;
+  height: $eye-size/2;
+  width: $eye-size;
+  border-radius: $eye-size $eye-size 0 0;
 }
 
 .face-1 {
@@ -410,3 +433,47 @@ li {
   }
 }
 
+.face-6 {
+
+  animation: face-6 2s infinite;
+  .eyes {
+    margin: 14px 8px;
+    &:before {
+    //  @extend %eye--downturned;
+     @extend %eye--open;
+     animation: eyes-face-3 4s ease-in-out infinite;
+    }
+    &:after {
+    //  @extend %eye--downturned;
+     margin-left: 18px;
+     @extend %eye--open;
+     animation: eyes-face-3 4s ease-in-out infinite;
+    }
+  }
+  .mouth {
+    @extend %mouth--sad;
+    height: 14px;
+    width: 23px;
+    border-radius: 16px 16px 0 0;
+    border-top: 6px solid #fff;
+    background-color: #f7aa86;
+    display: block;
+    margin: -6px 8px;
+  }
+}
+
+
+@keyframes face-6 {
+  0% {
+    transform: scale(.8);
+    animation-timing-function: cubic-bezier(0,1,.5,1);
+  }
+  50% {
+    transform: scale(1);
+    animation-timing-function: cubic-bezier(0,1,.5,1);
+  }
+  100% {
+    transform: scale(.8);
+    animation-timing-function: cubic-bezier(0,1,.5,1);
+  };
+}

@@ -19,6 +19,12 @@ class Emoji extends React.Component {
                     <div className="mouth"></div>
                 </div>
             </li>
+            <li onClick={this.onClickUpset}>
+                <div className="face-2">
+                <div className="eyes"></div>
+                <div className="mouth"></div>
+                </div>
+            </li>
             <li>
                 <div className="face-3">
                 <div className="eyes"></div>
@@ -26,7 +32,19 @@ class Emoji extends React.Component {
                 </div>
             </li>
             <li onClick={this.onClickUpset}>
+                <div className="face-4">
+                <div className="eyes"></div>
+                <div className="mouth"></div>
+                </div>
+            </li>
+            <li onClick={this.onClickUpset}>
                 <div className="face-5">
+                <div className="eyes"></div>
+                <div className="mouth"></div>
+                </div>
+            </li>
+            <li className="blue" onClick={this.onClickUpset}>
+                <div className="face-6">
                 <div className="eyes"></div>
                 <div className="mouth"></div>
                 </div>
