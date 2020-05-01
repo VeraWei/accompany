@@ -9,7 +9,7 @@ ReactDOM.render(
     <React.StrictMode>
         <Router>
             <Switch>
-                <Route exact path="/accompany" component={Welcome} />
+                <Route exact path="/self-isolation-fun-front" component={Welcome} />
             </Switch>
         </Router>
     </React.StrictMode>,
