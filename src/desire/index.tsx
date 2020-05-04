@@ -1,39 +1,37 @@
 import React from "react";
+import {
+  Link
+} from "react-router-dom";
 import ListGroup from "react-bootstrap/ListGroup";
-import Dance from "./dance";
+// import Dance from "./dance";
 import Blood from "./blood";
 import Text from "./text";
 import "./index.scss";
 
 class Desire extends React.Component {
-      state = {
+    state = {
         contentComponent: undefined,
-      };
+    };
 
     onClickJoke = () => {
         this.setState({
-            contentComponent: <Text type={"JOKE"} key="1"/>,
+            contentComponent: <Text type={"JOKE"} key="joke"/>,
         });
     };
 
     onClickSoup = () => {
         this.setState({
-            contentComponent: <Text type={"ADVICE"} key="2" />,
-        });
-    };
-    onClickDance = () => { 
-        this.setState({
-            contentComponent: <Dance key="3" />,
+            contentComponent: <Text type={"ADVICE"} key="advice" />,
         });
     };
     onClickBlood = () => { 
         this.setState({
-            contentComponent: <Blood key="4" />,
+            contentComponent: <Blood key="blood" />,
         });
     };
     onClickSuprise = () => { 
         this.setState({
-            contentComponent: <Text type={"JOKE"}  key="5"/>,
+            contentComponent: <Text type={"JOKE"}  key="suprise"/>,
         });
     };
 
@@ -51,11 +49,11 @@ class Desire extends React.Component {
                 <ListGroup.Item onClick={this.onClickSoup} action variant="secondary">
                     Drink a cup of chicken soup!
                 </ListGroup.Item>
-                <ListGroup.Item onClick={this.onClickDance} action variant="success">
-                    Dancing for me!
+                <ListGroup.Item variant="success">
+                    <Link to="/self-isolation-fun-front/dance">Dancing for me!</Link>
                 </ListGroup.Item>
-                <ListGroup.Item onClick={this.onClickBlood} action variant="danger">
-                    Warm my blood!
+                <ListGroup.Item variant="danger">
+                    <Link to="/self-isolation-fun-front/blood">Warm my blood!</Link>
                 </ListGroup.Item>
                 <ListGroup.Item onClick={this.onClickSuprise} action variant="dark">
                     I don't care, suprise me!
@@ -66,7 +64,7 @@ class Desire extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <p>What do you want?</p>
                 {this.renderList()}
                 {this.renderContent()}

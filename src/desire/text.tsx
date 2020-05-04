@@ -1,11 +1,10 @@
 import React from "react";
 import Spinner from "react-bootstrap/Spinner";
 import { HELPER_URL } from "../util/url";
+import  { HTTP } from "../util/http";
 import "./index.scss";
 
-const axios = require("axios");
-
-type TextProps = { type: string };
+interface TextProps { type: string };
 class Text extends React.Component<TextProps> {
   state = {
     content: null
@@ -14,27 +13,14 @@ class Text extends React.Component<TextProps> {
     this.getData();
   }
 
-  getData() {
+  async getData() {
     const { type } = this.props;
     const url = HELPER_URL[type];
-    axios({
-      method: "get",
-      headers: { accept: "application/json" },
-      url
+    const content = await HTTP.Get({url});
+    console.log(content);
+    this.setState({
+      content
     })
-      .then((response: any) => {
-        // handle success
-        this.setState({
-          content: response.data.content
-        });
-      })
-      .catch((error: any) => {
-        // handle error
-        console.log(error);
-      })
-      .then(function() {
-        // always executed
-      });
   }
 
   render() {
