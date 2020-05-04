@@ -1,13 +1,13 @@
 import React from 'react';
 import "vex-js/dist/css/vex-theme-wireframe.css";
 import "vex-js/dist/css/vex.css";
-import { HELPER_URL } from "../util/url";
-import  { HTTP } from "../util/http";
+import { HELPER_URL } from "../../util/url";
+import  { HTTP } from "../../util/http";
 import './index.scss';
 //FIXME
 import Feel from '../feel';
-import Desire from '../desire';
-import Header from '../common/header';
+import Header from '../../common/header';
+import Footer from '../../common/footer';
 
 
 const vex = require('vex-js')
@@ -82,19 +82,22 @@ class Welcome extends React.Component {
     }
 
     // TODO animation
-    renderNav() {
+    renderHeader() {
         return <Header />
     }
 
+    renderFooter() {
+        return <Footer />
+    }
+
     render() {
-        const {name: userName } = this.state;
         return <div className="App">
-            {this.renderNav()}
-            <div className="words">
-                <h3>how are you?</h3>
+            {this.renderHeader()}
+            <div className="main-contontent">
+                <h2 style={{textAlign: 'center'}}>How are you?</h2>
+                <Feel />
+                { this.renderFooter() }
             </div>
-            <Feel />
-            <Desire />
         </div>
     }
 }

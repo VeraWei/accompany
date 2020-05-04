@@ -13,16 +13,56 @@ $eye-size: 6px;
 
 .emojis {
     margin: 0 auto;
-    width: 350px;
+    width: 100%;
+    padding: 5%;
+    padding-top: 20px;
+    height: 620px;
 
-    li {
+    .feel-container {
+        display: flex;
+        width: 50%;
+        height: 200px;
+        cursor: pointer;
+        border: 5px solid white;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        // text-align: center;
+
+        &:nth-child(1) {
+            background-color: #50e3c2;
+        }
+        &:nth-child(2) {
+            background-color: #ffd200;
+            margin-left: -5px;
+        }
+        &:nth-child(3) {
+            background-color: #4cbb47;
+            margin-top: -5px;
+        }
+        &:nth-child(4) {
+            background-color: #362a6c;
+            margin-top: -5px;
+            margin-left: -5px;
+        }
+        &:nth-child(5) {
+            background-color: #4a90e2;
+            margin-top: -5px;
+        }
+        &:nth-child(6) {
+            background-color: red;
+            margin-top: -5px;
+            margin-left: -5px;
+        }
+    }
+
+    .feel {
         border-radius: 50%;
         background: $yellow;
         width: 40px;
         height: 40px;
         margin: 5px;
         display: inline-block;
-        cursor: pointer;
 
         &.blue {
             background: linear-gradient(180deg, $face--blue -5%, $yellow 50%);

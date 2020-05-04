@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../common/header';
+import Header from '../../common/header';
 import './index.scss';
 
 class Blood extends React.Component {
