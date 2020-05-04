@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/self-isolation-fun-front/static/css/main.fa4b9257.chunk.css",
-    "main.js": "/self-isolation-fun-front/static/js/main.61f4fa05.chunk.js",
-    "main.js.map": "/self-isolation-fun-front/static/js/main.61f4fa05.chunk.js.map",
+    "main.css": "/self-isolation-fun-front/static/css/main.fbe382a6.chunk.css",
+    "main.js": "/self-isolation-fun-front/static/js/main.c2762c13.chunk.js",
+    "main.js.map": "/self-isolation-fun-front/static/js/main.c2762c13.chunk.js.map",
     "runtime-main.js": "/self-isolation-fun-front/static/js/runtime-main.95bd37bc.js",
     "runtime-main.js.map": "/self-isolation-fun-front/static/js/runtime-main.95bd37bc.js.map",
-    "static/css/2.355c3bcb.chunk.css": "/self-isolation-fun-front/static/css/2.355c3bcb.chunk.css",
-    "static/js/2.647fe306.chunk.js": "/self-isolation-fun-front/static/js/2.647fe306.chunk.js",
-    "static/js/2.647fe306.chunk.js.map": "/self-isolation-fun-front/static/js/2.647fe306.chunk.js.map",
+    "static/css/2.e03f0d08.chunk.css": "/self-isolation-fun-front/static/css/2.e03f0d08.chunk.css",
+    "static/js/2.cd6ebbfd.chunk.js": "/self-isolation-fun-front/static/js/2.cd6ebbfd.chunk.js",
+    "static/js/2.cd6ebbfd.chunk.js.map": "/self-isolation-fun-front/static/js/2.cd6ebbfd.chunk.js.map",
     "index.html": "/self-isolation-fun-front/index.html",
-    "precache-manifest.6bebdc05d7c0f89f1924643436056abd.js": "/self-isolation-fun-front/precache-manifest.6bebdc05d7c0f89f1924643436056abd.js",
+    "precache-manifest.65ad47b8bce1c4799c9671ca71477d27.js": "/self-isolation-fun-front/precache-manifest.65ad47b8bce1c4799c9671ca71477d27.js",
     "service-worker.js": "/self-isolation-fun-front/service-worker.js",
-    "static/css/2.355c3bcb.chunk.css.map": "/self-isolation-fun-front/static/css/2.355c3bcb.chunk.css.map",
-    "static/css/main.fa4b9257.chunk.css.map": "/self-isolation-fun-front/static/css/main.fa4b9257.chunk.css.map",
-    "static/js/2.647fe306.chunk.js.LICENSE.txt": "/self-isolation-fun-front/static/js/2.647fe306.chunk.js.LICENSE.txt"
+    "static/css/2.e03f0d08.chunk.css.map": "/self-isolation-fun-front/static/css/2.e03f0d08.chunk.css.map",
+    "static/css/main.fbe382a6.chunk.css.map": "/self-isolation-fun-front/static/css/main.fbe382a6.chunk.css.map",
+    "static/js/2.cd6ebbfd.chunk.js.LICENSE.txt": "/self-isolation-fun-front/static/js/2.cd6ebbfd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.95bd37bc.js",
-    "static/css/2.355c3bcb.chunk.css",
-    "static/js/2.647fe306.chunk.js",
-    "static/css/main.fa4b9257.chunk.css",
-    "static/js/main.61f4fa05.chunk.js"
+    "static/css/2.e03f0d08.chunk.css",
+    "static/js/2.cd6ebbfd.chunk.js",
+    "static/css/main.fbe382a6.chunk.css",
+    "static/js/main.c2762c13.chunk.js"
   ]
 }
