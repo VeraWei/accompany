@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { OutlineEffect } from "three/examples/jsm/effects/OutlineEffect.js";
 import { MMDLoader } from "three/examples/jsm/loaders/MMDLoader.js";
 import { MMDAnimationHelper } from "three/examples/jsm/animation/MMDAnimationHelper.js";
-import { HELPER_URL } from '../util/url';
+import { HELPER_URL } from '../../util/url';
 import "./index.scss";
 
 let Ammo = require("three/examples/js/libs/ammo.js");
