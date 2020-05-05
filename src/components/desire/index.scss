@@ -1,4 +1,4 @@
-.container {
+.main {
     text-align: center;
 
     p {
@@ -279,6 +279,114 @@ $titanSize: 84px;
     }
 }
 
+// wall css
+.wall-contontent {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    bottom: 10%;
+    top: 10%;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+.wall-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.name {
+    font-weight: bold;
+    width: 20%;
+    display: inline-block;
+}
+
+.name-0 {
+    font-size: 20px;
+    animation: userMove3 10s infinite ease-in; 
+}
+
+.name-1 {
+    font-size: 22px;
+    animation: userMove1 9s infinite ease-out; 
+}
+
+.name-2 {
+    font-size: 24px;
+    animation: userMove3 8s infinite ease-in; 
+}
+
+.name-3 {
+    font-size: 32px;
+    animation: userMove2 7s infinite ease-in-out; 
+}
+
+.name-4 {
+    font-size: 64px;
+    animation: userMove1 6s infinite ease-out; 
+}
+
+// user wall animation
+
+@keyframes userMove1 {
+    0% {
+        transform: translateY(-100px) scale(1);
+    }
+
+    20% {
+        transform: translateY(200px) scale(1.5);
+    }
+
+    70% {
+        transform: translateY(500px) scale(1.2);
+    }
+
+    100% {
+        transform: translateY(800px) scale(0.8);
+    }
+}
+
+@keyframes userMove2 {
+    0% {
+        transform: translateY(-200px) scale(0.8);
+    }
+
+    20% {
+        transform: translateY(200px) scale(1.2);
+    }
+
+    70% {
+        transform: translateY(600px) scale(1.4);
+    }
+
+    100% {
+        transform: translateY(900px) scale(0.8);
+    }
+}
+
+@keyframes userMove3 {
+    0% {
+        transform: translateY(-100px) scale(0.8);
+    }
+
+    20% {
+        transform: translateY(300px) scale(1.5);
+    }
+
+    70% {
+        transform: translateY(700px) scale(1.2);
+    }
+
+    100% {
+        transform: translateY(900px) scale(0.8);
+    }
+}
+// exercise animation
 @keyframes spin {
     from {
         transform: rotate(0deg);  
