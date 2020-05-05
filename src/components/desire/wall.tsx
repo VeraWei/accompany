@@ -52,6 +52,7 @@ class Wall extends React.Component {
                 {this.renderHeader()}
                 <canvas className="wall-background"></canvas>
                 <div className="wall-contontent">
+                    <h2>Stay home, we are all here to accompany you!</h2>
                     {texts.map((name, index)=>{
                         
                         const random = Math.floor(Math.random() * 4);
