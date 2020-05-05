@@ -2,51 +2,66 @@ import React from "react";
 import Spinner from "react-bootstrap/Spinner";
 import { HELPER_URL } from "../../util/url";
 import { HTTP } from "../../util/http";
-import Footer from '../../common/footer';
-import Header from '../../common/header';
+import Footer from "../../common/footer";
+import Header from "../../common/header";
 import "./index.scss";
 
-class Joke extends React.Component {
+const Particles = require("particlesjs");
+
+const texts = ["abc", "wei", "jenifer", "jiaming", "hahah", "abc", "wei", "jenifer", "jiaming", "hahah", "jiaming", "hahah", "abc", "wei", "jenifer",];
+
+class Wall extends React.Component {
     state = {
         content: null,
     };
     componentDidMount() {
-        this.getData();
+        this.initBg();
     }
 
-    async getData() {
-        const url = HELPER_URL["JOKE"];
-        const content = await HTTP.Get({ url });
-        console.log(content);
-        this.setState({
-            content,
+    initBg() {
+        Particles.init({
+            selector: ".wall-background",
+            color: ["#DA0463", "#404B69"],
+            connectParticles: true,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    options: {
+                        color: "#00C9B1",
+                        maxParticles: 80,
+                        connectParticles: false,
+                    },
+                },
+            ],
         });
     }
+
     // TODO animation
     renderHeader() {
-        return <Header />
+        return <Header />;
     }
 
     renderFooter() {
-        return <Footer />
+        return <Footer />;
     }
 
     render() {
         const { content } = this.state;
         return (
-            <div className="container">
-            {this.renderHeader()}
-            <div className="main-contontent">
-                {content ? (
-                    <p>{content}</p>
-                ) : (
-                    <Spinner animation="grow" variant="light" />
-                )}
-            </div>
-            { this.renderFooter() }
+            <div className="main">
+                {this.renderHeader()}
+                <canvas className="wall-background"></canvas>
+                <div className="wall-contontent">
+                    {texts.map((name, index)=>{
+                        
+                        const random = Math.floor(Math.random() * 4);
+                        return <span className={`name name-${random}`}>{name}</span>;
+                    })}
+                </div>
+                {this.renderFooter()}
             </div>
         );
     }
 }
 
-export default Joke;
+export default Wall;

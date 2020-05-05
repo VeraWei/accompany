@@ -15,13 +15,41 @@ ReactDOM.render(
     <React.StrictMode>
         <Router>
             <Switch>
-                <Route exact path="/self-isolation-fun-front" component={Welcome} />
-                <Route exact path="/self-isolation-fun-front/joke" component={Joke} />
-                <Route exact path="/self-isolation-fun-front/advice" component={Advice} />
-                <Route exact path="/self-isolation-fun-front/dance" component={Dance} />
-                <Route exact path="/self-isolation-fun-front/blood" component={Blood} />
-                <Route exact path="/self-isolation-fun-front/read" component={Read} />
-                <Route exact path="/self-isolation-fun-front/wall" component={Wall} />
+                <Route
+                    exact
+                    path="/self-isolation-fun-front"
+                    component={Welcome}
+                />
+                <Route
+                    exact
+                    path="/self-isolation-fun-front/joke"
+                    component={Joke}
+                />
+                <Route
+                    exact
+                    path="/self-isolation-fun-front/advice"
+                    component={Advice}
+                />
+                <Route
+                    exact
+                    path="/self-isolation-fun-front/dance"
+                    component={Dance}
+                />
+                <Route
+                    exact
+                    path="/self-isolation-fun-front/blood"
+                    component={Blood}
+                />
+                <Route
+                    exact
+                    path="/self-isolation-fun-front/read"
+                    component={Read}
+                />
+                <Route
+                    exact
+                    path="/self-isolation-fun-front/wall"
+                    component={Wall}
+                />
             </Switch>
         </Router>
     </React.StrictMode>,

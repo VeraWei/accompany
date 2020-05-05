@@ -10,10 +10,10 @@ class Footer extends React.Component {
                         <Button href="https://github.com/VeraWei" variant="link">GitHub</Button>
                     </li>
                     <li>
-                        <Button href="https://github.com/VeraWei" variant="link">Medium</Button>
+                        <Button href="https://medium.com/@vera.wqm" variant="link">Medium</Button>
                     </li>
                     <li>
-                        <Button href="https://github.com/VeraWei" variant="link">Twitter</Button>
+                        <Button href="https://twitter.com/qiumingwei1" variant="link">Twitter</Button>
                     </li>
                 </ul>
             </div>

@@ -34,7 +34,7 @@ class Joke extends React.Component {
     render() {
         const { content } = this.state;
         return (
-            <div className="container">
+            <div className="main">
             {this.renderHeader()}
             <div className="main-contontent">
                 {content ? (
