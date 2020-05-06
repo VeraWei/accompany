@@ -22,32 +22,32 @@ ReactDOM.render(
                 />
                 <Route
                     exact
-                    path="/self-isolation-fun-front/joke"
+                    path="/fun-joke"
                     component={Joke}
                 />
                 <Route
                     exact
-                    path="/self-isolation-fun-front/advice"
+                    path="/fun-advice"
                     component={Advice}
                 />
                 <Route
                     exact
-                    path="/self-isolation-fun-front/dance"
+                    path="/fun-dance"
                     component={Dance}
                 />
                 <Route
                     exact
-                    path="/self-isolation-fun-front/blood"
+                    path="/fun-blood"
                     component={Blood}
                 />
                 <Route
                     exact
-                    path="/self-isolation-fun-front/read"
+                    path="/fun-read"
                     component={Read}
                 />
                 <Route
                     exact
-                    path="/self-isolation-fun-front/wall"
+                    path="/fun-wall"
                     component={Wall}
                 />
             </Switch>

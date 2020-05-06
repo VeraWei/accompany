@@ -14,7 +14,7 @@ class Emoji extends React.Component {
             <div className="emojis">
                 <Link
                     className="feel-container"
-                    to="/self-isolation-fun-front/joke"
+                    to="/fun-joke"
                 >
                     <div className="feel">
                         <div className="face-1">
@@ -25,7 +25,7 @@ class Emoji extends React.Component {
                 </Link>
                 <Link
                     className="feel-container"
-                    to="/self-isolation-fun-front/advice"
+                    to="/fun-advice"
                 >
                     <div className="feel" onClick={this.onClickUpset}>
                         <div className="face-2">
@@ -37,7 +37,7 @@ class Emoji extends React.Component {
 
                 <Link
                     className="feel-container"
-                    to="/self-isolation-fun-front/dance"
+                    to="/fun-dance"
                 >
                     <div className="feel">
                         <div className="face-3">
@@ -49,7 +49,7 @@ class Emoji extends React.Component {
 
                 <Link
                     className="feel-container"
-                    to="/self-isolation-fun-front/blood"
+                    to="/fun-blood"
                 >
                     <div className="feel" onClick={this.onClickUpset}>
                         <div className="face-4">
@@ -61,7 +61,7 @@ class Emoji extends React.Component {
 
                 <Link
                     className="feel-container"
-                    to="/self-isolation-fun-front/read"
+                    to="/fun-read"
                 >
                     <div className="feel" onClick={this.onClickUpset}>
                         <div className="face-5">
@@ -73,7 +73,7 @@ class Emoji extends React.Component {
 
                 <Link
                     className="feel-container"
-                    to="/self-isolation-fun-front/wall"
+                    to="/fun-wall"
                 >
                     <div className="blue feel" onClick={this.onClickUpset}>
                         <div className="face-6">
