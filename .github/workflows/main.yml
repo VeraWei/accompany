@@ -26,7 +26,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Install Dependencies
       run: npm install
-    # - name: Commit files
+
+    - name: Set who I am
       run: |
         git config --global user.email "vera.wqm@gmail.com"
         git config --global user.name "vera wei"
