@@ -34,4 +34,7 @@ jobs:
         git config --global url."git@github.com:".insteadOf "https://github.com/"
     # Runs a set of commands using the runners shell
     - name: Deploy
-      run: npm run deploy
+      uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # run: npm run deploy
