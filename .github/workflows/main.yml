@@ -30,8 +30,8 @@ jobs:
     - name: Set who I am
       run: |
         git config --global user.email "vera.wqm@gmail.com"
-        git config --global user.name "vera wei"
-        git config --global url."git@github.com:" 
+        git config --global user.name "Vera Wei"
+        git config --global url."git@github.com:".insteadOf "https://github.com/"
     # Runs a set of commands using the runners shell
     - name: Deploy
       run: npm run deploy
