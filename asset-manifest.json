@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/accompany/static/css/main.97fc57c8.chunk.css",
-    "main.js": "/accompany/static/js/main.15e1ed49.chunk.js",
-    "main.js.map": "/accompany/static/js/main.15e1ed49.chunk.js.map",
-    "runtime-main.js": "/accompany/static/js/runtime-main.edc1298a.js",
-    "runtime-main.js.map": "/accompany/static/js/runtime-main.edc1298a.js.map",
-    "static/css/2.e03f0d08.chunk.css": "/accompany/static/css/2.e03f0d08.chunk.css",
-    "static/js/2.f6f9e9b9.chunk.js": "/accompany/static/js/2.f6f9e9b9.chunk.js",
-    "static/js/2.f6f9e9b9.chunk.js.map": "/accompany/static/js/2.f6f9e9b9.chunk.js.map",
-    "index.html": "/accompany/index.html",
-    "precache-manifest.76d22736bd5b187b83ae7df0f7345b25.js": "/accompany/precache-manifest.76d22736bd5b187b83ae7df0f7345b25.js",
-    "service-worker.js": "/accompany/service-worker.js",
-    "static/css/2.e03f0d08.chunk.css.map": "/accompany/static/css/2.e03f0d08.chunk.css.map",
-    "static/css/main.97fc57c8.chunk.css.map": "/accompany/static/css/main.97fc57c8.chunk.css.map",
-    "static/js/2.f6f9e9b9.chunk.js.LICENSE.txt": "/accompany/static/js/2.f6f9e9b9.chunk.js.LICENSE.txt"
+    "main.css": "/self-isolation-fun-front/static/css/main.cd5f9240.chunk.css",
+    "main.js": "/self-isolation-fun-front/static/js/main.66715763.chunk.js",
+    "main.js.map": "/self-isolation-fun-front/static/js/main.66715763.chunk.js.map",
+    "runtime-main.js": "/self-isolation-fun-front/static/js/runtime-main.95bd37bc.js",
+    "runtime-main.js.map": "/self-isolation-fun-front/static/js/runtime-main.95bd37bc.js.map",
+    "static/css/2.e03f0d08.chunk.css": "/self-isolation-fun-front/static/css/2.e03f0d08.chunk.css",
+    "static/js/2.f6f9e9b9.chunk.js": "/self-isolation-fun-front/static/js/2.f6f9e9b9.chunk.js",
+    "static/js/2.f6f9e9b9.chunk.js.map": "/self-isolation-fun-front/static/js/2.f6f9e9b9.chunk.js.map",
+    "index.html": "/self-isolation-fun-front/index.html",
+    "precache-manifest.040b34e7b78e64b03445f0428757dc83.js": "/self-isolation-fun-front/precache-manifest.040b34e7b78e64b03445f0428757dc83.js",
+    "service-worker.js": "/self-isolation-fun-front/service-worker.js",
+    "static/css/2.e03f0d08.chunk.css.map": "/self-isolation-fun-front/static/css/2.e03f0d08.chunk.css.map",
+    "static/css/main.cd5f9240.chunk.css.map": "/self-isolation-fun-front/static/css/main.cd5f9240.chunk.css.map",
+    "static/js/2.f6f9e9b9.chunk.js.LICENSE.txt": "/self-isolation-fun-front/static/js/2.f6f9e9b9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.edc1298a.js",
+    "static/js/runtime-main.95bd37bc.js",
     "static/css/2.e03f0d08.chunk.css",
     "static/js/2.f6f9e9b9.chunk.js",
-    "static/css/main.97fc57c8.chunk.css",
-    "static/js/main.15e1ed49.chunk.js"
+    "static/css/main.cd5f9240.chunk.css",
+    "static/js/main.66715763.chunk.js"
   ]
 }
