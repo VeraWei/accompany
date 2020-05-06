@@ -1,18 +1,54 @@
 import React from "react";
+import { HELPER_URL } from "../../util/url";
+import { HTTP } from "../../util/http";
 import Footer from "../../common/footer";
 import Header from "../../common/header";
 import "./index.scss";
 
 const Particles = require("particlesjs");
 
-const texts = ["abc", "wei", "jenifer", "jiaming", "hahah", "abc", "wei", "jenifer", "jiaming", "hahah", "jiaming", "hahah", "abc", "wei", "jenifer",];
+// Test data;
+const texts = [
+    {
+        name: "abc",
+    }, {
+        name: "wei",
+    }, {
+        name: "jenifer",
+    }, {
+        name: "jiaming",
+    }, {
+        name: "hahah",
+    }, {
+        name: "abc",
+    }, {
+        name: "wei",
+    }, {
+        name: "jenifer",
+    }, {
+        name: "jiaming",
+    }, {
+        name: "hahah",
+    }, {
+        name: "jiaming",
+    }, {
+        name: "hahah",
+    }, {
+        name: "abc",
+    }, {
+        name: "wei",
+    }, {
+        name: "jenifer",
+    }
+];
 
 class Wall extends React.Component {
     state = {
-        content: null,
+        content: [],
     };
     componentDidMount() {
         this.initBg();
+        this.getData();
     }
 
     initBg() {
@@ -33,9 +69,35 @@ class Wall extends React.Component {
         });
     }
 
+    async getData() {
+        const url = HELPER_URL["USERS"];
+        const content = await HTTP.Get({ url });
+        const users = content.users;
+        this.setState({
+            content: content.users || texts,
+        });
+    }
+
     // TODO animation
     renderHeader() {
         return <Header />;
+    }
+
+    renderPlaceholder() {
+        return <p>No user yet</p>;
+    }
+
+    renderAnimation() {
+        const { content } = this.state;
+        return content.map((item: any, index) => {
+            const random = Math.floor(Math.random() * 4);
+            const { name } = item;
+            return (
+                <span key={`user-${index}`} className={`name name-${random}`}>
+                    {name}
+                </span>
+            )}
+        );
     }
 
     renderFooter() {
@@ -43,17 +105,15 @@ class Wall extends React.Component {
     }
 
     render() {
+        const { content } = this.state;
         return (
             <div className="main">
                 {this.renderHeader()}
                 <canvas className="wall-background"></canvas>
                 <div className="wall-contontent">
-                    <h2>Stay home, we are all here to accompany you!</h2>
-                    {texts.map((name, index)=>{
-                        
-                        const random = Math.floor(Math.random() * 4);
-                        return <span className={`name name-${random}`}>{name}</span>;
-                    })}
+                    {!content.length
+                        ? this.renderPlaceholder()
+                        : this.renderAnimation()}
                 </div>
                 {this.renderFooter()}
             </div>
