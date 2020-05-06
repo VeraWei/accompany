@@ -1,7 +1,4 @@
 import React from "react";
-import Spinner from "react-bootstrap/Spinner";
-import { HELPER_URL } from "../../util/url";
-import { HTTP } from "../../util/http";
 import Footer from "../../common/footer";
 import Header from "../../common/header";
 import "./index.scss";
@@ -46,7 +43,6 @@ class Wall extends React.Component {
     }
 
     render() {
-        const { content } = this.state;
         return (
             <div className="main">
                 {this.renderHeader()}
