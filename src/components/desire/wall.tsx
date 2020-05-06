@@ -72,7 +72,6 @@ class Wall extends React.Component {
     async getData() {
         const url = HELPER_URL["USERS"];
         const content = await HTTP.Get({ url });
-        const users = content.users;
         this.setState({
             content: content.users || texts,
         });
