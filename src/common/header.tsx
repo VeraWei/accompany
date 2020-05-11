@@ -1,24 +1,24 @@
 import React from "react";
 import "./index.scss";
+import logo from "./logo.png";
 class Header extends React.Component {
     renderName() {
         const userName = localStorage.getItem("name");
         return (
             <div className="content">
                 <div className="content__container">
-                    <p className="content__container__text">Holla</p>
                     <ul className="content__container__list">
                         <li className="content__container__list__item">
-                            world !
+                            Holla {userName}!
                         </li>
                         <li className="content__container__list__item">
-                            {userName}!
+                            Nice to meet you here!
                         </li>
                         <li className="content__container__list__item">
-                            users !
+                            How are you today?
                         </li>
                         <li className="content__container__list__item">
-                            everybody !
+                            Let's take a break.
                         </li>
                     </ul>
                 </div>
@@ -27,14 +27,12 @@ class Header extends React.Component {
     }
 
     render() {
-        const dateTime = new Date().toDateString();
         return (
             <div className="header">
-                <span className="time">{dateTime}</span>
+                <div className="left">
+                    <img src={logo} alt="" />
+                </div>
                 {this.renderName()}
-                <span className="text">
-                    Nice to meet you here.
-                </span>
             </div>
         );
     }

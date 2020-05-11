@@ -1,0 +1,161 @@
+.poem-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+
+    }
+
+    .poem-content {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        &:hover {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}
+
+.animate-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 6%;
+    right: 2%;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 70px;
+        height: 25px;
+        position: relative;
+        opacity: 0;
+        animation: 2s fadeInUp infinite linear 2s;
+    }
+    li {
+        width: 6px;
+        height: 15px;
+        background: white;
+        position: absolute;
+        box-shadow: 0 0 1px white;
+        transform-origin: bottom;
+    }
+    li:nth-child(1) {
+        left: 26px;
+        bottom: 5px;
+        transform: rotate(-35deg);
+    }
+    li:nth-child(2) {
+        left: 34px;
+        bottom: 8px;
+    }
+    li:nth-child(3) {
+        left: 42px;
+        bottom: 5px;
+        transform: rotate(35deg);
+    }
+}
+.wineglass {
+    height: 36px;
+    position: relative;
+}
+.wineglass:after {
+    content: "";
+    position: absolute;
+    top: 47px;
+    left: 5px;
+    width: 20px;
+    height: 5px;
+    background: white;
+    box-shadow: 0 0 1px white;
+}
+.wineglass-top {
+    background: white;
+    width: 30px;
+    height: 36px;
+    border-radius: 0 0 36px 36px;
+    box-shadow: 0 0 1px white;
+}
+.wineglass-top:before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: linear-gradient(transparent 50%, #f36e3e 50%);
+}
+.wineglass-left .wineglass-top:before {
+    animation: rotate2 2s linear infinite;
+}
+.wineglass-right .wineglass-top:before {
+    animation: rotate1 2s linear infinite;
+}
+.wineglass-top:after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 12px;
+    width: 6px;
+    height: 13px;
+    background: white;
+    box-shadow: 0 0 1px white;
+}
+.wineglass-left {
+    display: inline-block;
+    margin-right: 10px;
+    animation: rotate1 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
+}
+.wineglass-right {
+    display: inline-block;
+    animation: rotate2 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
+}
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(22deg);
+    }
+}
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-22deg);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: scaleY(1);
+    }
+
+    33% {
+        opacity: 1;
+        transform: scaleY(1.4);
+    }
+    64% {
+        opacity: 0.1;
+        transform: scaleY(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleY(0.3);
+    }
+}

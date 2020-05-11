@@ -13,21 +13,30 @@ $eye-size: 6px;
 
 .emojis {
     margin: 0 auto;
-    width: 100%;
-    padding: 5%;
-    padding-top: 20px;
-    height: 620px;
+    width: 90%;
+    margin-top: 6em;
+    margin-bottom: 2em;
+    text-align: center;
 
     .feel-container {
-        display: flex;
+        // display: flex;
         width: 50%;
-        height: 200px;
         cursor: pointer;
         border: 5px solid white;
-        align-items: center;
-        justify-content: center;
-        float: left;
-        // text-align: center;
+        display: inline-block;
+        text-align: center;
+        padding: 6em 0;
+
+        span {
+            color: white;
+            margin-right: 8px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
 
         &:nth-child(1) {
             background-color: #50e3c2;
@@ -63,6 +72,8 @@ $eye-size: 6px;
         height: 40px;
         margin: 5px;
         display: inline-block;
+        text-align: left;
+        vertical-align: middle;
 
         &.blue {
             background: linear-gradient(180deg, $face--blue -5%, $yellow 50%);
