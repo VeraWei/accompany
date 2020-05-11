@@ -1,0 +1,11 @@
+.canvas-container {
+    // border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#myCanvas {
+    border: 3px solid green;
+}

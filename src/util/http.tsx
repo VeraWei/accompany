@@ -29,5 +29,17 @@ export const HTTP = {
             console.log(error);
             return error;
         })
+    },
+    Put: async (params: any) => {
+        return axios.put(params.url, params.data)
+        .then((response: any) => {
+            // handle success
+            return response.data.content;
+        })
+        .catch((error: any) => {
+            // handle error
+            console.log(error);
+            return error;
+        })
     }
 }
