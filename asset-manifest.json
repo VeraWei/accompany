@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/self-isolation-fun-front/static/css/main.831b9fae.chunk.css",
+    "main.css": "/self-isolation-fun-front/static/css/main.4da9393a.chunk.css",
     "main.js": "/self-isolation-fun-front/static/js/main.a0dce043.chunk.js",
     "main.js.map": "/self-isolation-fun-front/static/js/main.a0dce043.chunk.js.map",
     "runtime-main.js": "/self-isolation-fun-front/static/js/runtime-main.95bd37bc.js",
@@ -9,10 +9,10 @@
     "static/js/2.be1f85e7.chunk.js": "/self-isolation-fun-front/static/js/2.be1f85e7.chunk.js",
     "static/js/2.be1f85e7.chunk.js.map": "/self-isolation-fun-front/static/js/2.be1f85e7.chunk.js.map",
     "index.html": "/self-isolation-fun-front/index.html",
-    "precache-manifest.bc9206d7fc81476be65cc59d97cd09c6.js": "/self-isolation-fun-front/precache-manifest.bc9206d7fc81476be65cc59d97cd09c6.js",
+    "precache-manifest.77f4ec9abfc8ce641173375c36e2344f.js": "/self-isolation-fun-front/precache-manifest.77f4ec9abfc8ce641173375c36e2344f.js",
     "service-worker.js": "/self-isolation-fun-front/service-worker.js",
     "static/css/2.e03f0d08.chunk.css.map": "/self-isolation-fun-front/static/css/2.e03f0d08.chunk.css.map",
-    "static/css/main.831b9fae.chunk.css.map": "/self-isolation-fun-front/static/css/main.831b9fae.chunk.css.map",
+    "static/css/main.4da9393a.chunk.css.map": "/self-isolation-fun-front/static/css/main.4da9393a.chunk.css.map",
     "static/js/2.be1f85e7.chunk.js.LICENSE.txt": "/self-isolation-fun-front/static/js/2.be1f85e7.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/self-isolation-fun-front/static/media/logo.8382dbf3.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.95bd37bc.js",
     "static/css/2.e03f0d08.chunk.css",
     "static/js/2.be1f85e7.chunk.js",
-    "static/css/main.831b9fae.chunk.css",
+    "static/css/main.4da9393a.chunk.css",
     "static/js/main.a0dce043.chunk.js"
   ]
 }
