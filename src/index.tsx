@@ -2,12 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Welcome from "./components/welcome";
-import Game from "./components/desire/game";
-import Recommend from "./components/desire/recommend";
-// import Dance from "./components/desire/dance";
-// import Blood from "./components/desire/blood";
-// import Read from "./components/desire/read";
-import Wall from "./components/desire/wall";
+import { Dance, Game, Recommend, UserWall } from "./components/desire";
 import * as serviceWorker from "./serviceWorker";
 import "./index.scss";
 
@@ -22,10 +17,10 @@ ReactDOM.render(
                 />
                 <Route exact path="/fun-game" component={Game} />
                 <Route exact path="/fun-recommend" component={Recommend} />
-                {/* <Route exact path="/fun-dance" component={Dance} /> */}
+                <Route exact path="/fun-dance" component={Dance} />
                 {/* <Route exact path="/fun-blood" component={Blood} /> */}
                 {/* <Route exact path="/fun-read" component={Read} /> */}
-                <Route exact path="/fun-wall" component={Wall} />
+                <Route exact path="/fun-user" component={UserWall} />
             </Switch>
         </Router>
     </React.StrictMode>,

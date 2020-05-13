@@ -47,7 +47,6 @@ class Game extends React.Component {
     }
 
     initGame() {
-
         this.bricks = [];
         this.x = this.canvas.width / 2;
         this.y = this.canvas.height - 30;
@@ -92,8 +91,8 @@ class Game extends React.Component {
                 console.log(value);
                 document.location.reload();
                 // debugger;
-            }
-        })
+            },
+        });
     }
 
     collisionDetection() {
@@ -114,7 +113,7 @@ class Game extends React.Component {
                             this.score ===
                             this.brickRowCount * this.brickColumnCount
                         ) {
-                            this.doItAgain('You win, congrats');
+                            this.doItAgain("You win, congrats");
                         }
                     }
                 }
@@ -206,7 +205,7 @@ class Game extends React.Component {
             } else {
                 this.lives--;
                 if (!this.lives) {
-                    this.doItAgain('Oops');
+                    this.doItAgain("Oops");
                 } else {
                     this.x = this.canvas.width / 2;
                     this.y = this.canvas.height - 30;
@@ -237,11 +236,7 @@ class Game extends React.Component {
     }
 
     renderFooter() {
-        return (
-            <div>
-                <Footer hasBack={true} />
-            </div>
-        );
+        return <Footer hasBack={true} />;
     }
 
     renderCanvas() {
@@ -262,11 +257,9 @@ class Game extends React.Component {
 
     render() {
         return (
-            <div className="main">
+            <div className="main-container">
                 {this.renderHeader()}
-                <div className="main-contontent">
-                    {this.renderCanvas()}
-                </div>
+                <div className="main-content">{this.renderCanvas()}</div>
                 {this.renderFooter()}
             </div>
         );

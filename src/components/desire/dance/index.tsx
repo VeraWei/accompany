@@ -3,7 +3,9 @@ import * as THREE from "three";
 import { OutlineEffect } from "three/examples/jsm/effects/OutlineEffect.js";
 import { MMDLoader } from "three/examples/jsm/loaders/MMDLoader.js";
 import { MMDAnimationHelper } from "three/examples/jsm/animation/MMDAnimationHelper.js";
-import { HELPER_URL } from '../../util/url';
+import { HELPER_URL } from "../../../util/url";
+import Footer from "../../../common/footer";
+import Header from "../../../common/header";
 import "./index.scss";
 
 let Ammo = require("three/examples/js/libs/ammo.js");
@@ -20,6 +22,9 @@ const clock = new THREE.Clock();
 const scene = new THREE.Scene();
 const loader = new MMDLoader();
 const helper = new MMDAnimationHelper();
+
+const canvasWidth = window.innerWidth;
+const canvasHeight = window.innerHeight;
 
 class Dance extends React.Component {
     container: any;
@@ -53,7 +58,7 @@ class Dance extends React.Component {
 
     loadAnimationCallback = (cameraAnimation: any) => {
         helper.add(this.camera, {
-            animation: cameraAnimation
+            animation: cameraAnimation,
         });
 
         new THREE.AudioLoader().load(
@@ -73,18 +78,18 @@ class Dance extends React.Component {
                 this.ready = true;
             },
             this.onProgress,
-            err => {
+            (err) => {
                 console.log(err);
             }
         );
-    }
+    };
 
-    loadWithAnimationCallback = (mmd: { mesh: any; animation: any; }) => {
+    loadWithAnimationCallback = (mmd: { mesh: any; animation: any }) => {
         this.mesh = mmd.mesh;
 
         helper.add(this.mesh, {
             animation: mmd.animation,
-            physics: true
+            physics: true,
         });
 
         loader.loadAnimation(
@@ -92,26 +97,28 @@ class Dance extends React.Component {
             this.camera,
             this.loadAnimationCallback,
             this.onProgress,
-            err => {
+            (err) => {
                 console.log(err);
             }
         );
-    }
+    };
 
     init() {
-        this.container = document.createElement("div");
-        document.body.appendChild(this.container);
+        this.container = document.getElementById("canvas-container");
 
         this.camera = new THREE.PerspectiveCamera(
             45,
-            window.innerWidth / window.innerHeight,
+            canvasWidth / canvasHeight,
             1,
             2000
         );
 
-        scene.background = new THREE.Color(0xffffff);
+        const bgColor = "linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);";
+        scene.background = new THREE.Color(bgColor);
 
-        scene.add(new THREE.PolarGridHelper(30, 10, 10, 10, undefined, undefined));
+        scene.add(
+            new THREE.PolarGridHelper(30, 10, 10, 10, undefined, undefined)
+        );
 
         const ambient = new THREE.AmbientLight(0x666666);
         scene.add(ambient);
@@ -124,7 +131,7 @@ class Dance extends React.Component {
 
         this.renderer = new THREE.WebGLRenderer({ antialias: true });
         this.renderer.setPixelRatio(window.devicePixelRatio);
-        this.renderer.setSize(window.innerWidth, window.innerHeight);
+        this.renderer.setSize(canvasWidth, canvasHeight);
         this.container.appendChild(this.renderer.domElement);
 
         this.effect = new OutlineEffect(this.renderer, {});
@@ -134,22 +141,22 @@ class Dance extends React.Component {
             vmdFiles,
             this.loadWithAnimationCallback,
             this.onProgress,
-            err => {
+            (err) => {
                 console.log(err);
             }
         );
 
         //
 
-        window.addEventListener("resize", this.onWindowResize, false);
+        // window.addEventListener("resize", this.onWindowResize, false);
     }
 
-    onWindowResize = () => {
-        this.camera.aspect = window.innerWidth / window.innerHeight;
-        this.camera.updateProjectionMatrix();
+    // onWindowResize = () => {
+    //     this.camera.aspect = canvasWidth / canvasHeight;
+    //     this.camera.updateProjectionMatrix();
 
-        this.effect.setSize(window.innerWidth, window.innerHeight);
-    };
+    //     this.effect.setSize(canvasWidth, canvasHeight);
+    // };
 
     //
 
@@ -166,8 +173,25 @@ class Dance extends React.Component {
         this.effect.render(scene, this.camera);
     }
 
+    // TODO animation
+    renderHeader() {
+        return <Header />;
+    }
+
+    renderFooter() {
+        return <Footer hasBack={true} />;
+    }
+
     render() {
-        return <div></div>;
+        return (
+            <div className="main-container">
+                {this.renderHeader()}
+                <div className="main-content">
+                    <div id="canvas-container"></div>
+                </div>
+                {this.renderFooter()}
+            </div>
+        );
     }
 }
 

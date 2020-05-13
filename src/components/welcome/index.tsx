@@ -80,14 +80,16 @@ class Welcome extends React.Component {
     };
 
     renderLoading() {
-        return !this.state.name && (
-            <div className="loading">
-                <div className="loader">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        return (
+            !this.state.name && (
+                <div className="loading">
+                    <div className="loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-            </div>
+            )
         );
     }
 
@@ -102,9 +104,9 @@ class Welcome extends React.Component {
 
     render() {
         return (
-            <div className="App">
+            <div className="main-container">
                 {this.renderHeader()}
-                <div className="main-contontent">
+                <div className="main-content">
                     <Feel />
                 </div>
                 {this.renderFooter()}

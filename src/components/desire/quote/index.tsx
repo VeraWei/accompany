@@ -1,9 +1,9 @@
 import React from "react";
 import Spinner from "react-bootstrap/Spinner";
-import { HELPER_URL } from "../../util/url";
-import { HTTP } from "../../util/http";
-import Footer from "../../common/footer";
-import Header from "../../common/header";
+import { HELPER_URL } from "../../../util/url";
+import { HTTP } from "../../../util/http";
+import Footer from "../../../common/footer";
+import Header from "../../../common/header";
 import "./index.scss";
 
 class Joke extends React.Component {
@@ -56,9 +56,9 @@ class Joke extends React.Component {
     render() {
         const { content } = this.state;
         return (
-            <div className="main">
+            <div className="main-container">
                 {this.renderHeader()}
-                <div className="main-contontent">
+                <div className="main-content">
                     {content ? (
                         <p>{content}</p>
                     ) : (

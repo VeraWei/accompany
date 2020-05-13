@@ -80,10 +80,13 @@
 }
 
 .footer {
-    width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 20px;
+    left: 0;
+    right: 0;
 
     .back {
         color: black;
@@ -99,6 +102,13 @@
         padding: 0;
         flex: 1;
     }
+
+    &.has-back {
+        ul {
+            text-align: center;
+        }
+    }
+
     li {
         display: inline-block;
         margin-left: 10px;
@@ -110,6 +120,7 @@
         text-decoration: none;
         cursor: pointer;
         color: rgba(255, 255, 255, 0.8);
+        flex: 1;
         &:hover {
             color: rgba(255, 255, 255, 1);
             opacity: 1;
@@ -117,8 +128,8 @@
     }
 
     .time {
-        // position: absolute;
-        // right: 10px;
+        text-align: right;
+        flex: 1;
         bottom: 0;
         line-height: 38px;
         color: #f08;
