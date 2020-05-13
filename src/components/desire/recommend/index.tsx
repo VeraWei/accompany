@@ -1,5 +1,5 @@
 import React from "react";
-import {Spinner, Button} from "react-bootstrap";
+import { Spinner, Button } from "react-bootstrap";
 import { HELPER_URL } from "../../../util/url";
 import { HTTP } from "../../../util/http";
 import Footer from "../../../common/footer";
@@ -39,7 +39,7 @@ class Recommend extends React.Component {
                             <p className="poem-content">{item.content}</p>
                             <p>
                                 By:{" "}
-                                <Button href={item.poet.url}  variant="link">
+                                <Button href={item.poet.url} variant="link">
                                     {item.poet.name}
                                 </Button>
                             </p>
@@ -96,12 +96,10 @@ class Recommend extends React.Component {
 
     render() {
         return (
-            <div className="main">
+            <div className="main-container">
                 {this.renderHeader()}
-                <div className="main-contontent">
-                    {this.renderContent()}
-                    {this.renderAni()}
-                </div>
+                {this.renderContent()}
+                {this.renderAni()}
                 {this.renderFooter()}
             </div>
         );

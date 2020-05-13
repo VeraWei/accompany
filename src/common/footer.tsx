@@ -12,8 +12,9 @@ class Footer extends React.Component<FooterProps> {
         const dateTime = new Date().toDateString();
 
         const { hasBack } = this.props;
+        const classNm = hasBack ? "has-back footer" : "footer";
         return (
-            <div className="footer">
+            <div className={classNm}>
                 { hasBack && <Link to="/self-isolation-fun-front" className="back"> <span> Go Back</span></Link>}
                 <ul>
                     <li>

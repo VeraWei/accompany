@@ -24,7 +24,8 @@ class Emoji extends React.Component {
                         </div>
                     </div>
                 </Link>
-                <Link to="/fun-read" className="feel-container">
+                <Link to="/fun-dance" className="feel-container">
+                    <span>Dance</span>
                     <div className="feel">
                         <div className="face-5">
                             <div className="eyes"></div>
@@ -32,8 +33,8 @@ class Emoji extends React.Component {
                         </div>
                     </div>
                 </Link>
-                <Link to="/fun-wall" className="feel-container">
-                    <span>Wall</span>
+                <Link to="/fun-user" className="feel-container">
+                    <span>User</span>
                     <div className="blue feel">
                         <div className="face-6">
                             <div className="eyes"></div>

@@ -1,0 +1,147 @@
+
+// wall css
+.wall-contontent {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    bottom: 6%;
+    top: 10%;
+    border: 5px solid white;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.wall-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.name {
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    font-family: monospace Arial, Helvetica, sans-serif;
+}
+
+.name-0 {
+    font-size: 20px;
+    animation: userMove3 12s infinite ease-in;
+    transform: translateY(500px) scale(1);
+}
+
+.name-1 {
+    font-size: 22px;
+    animation: userMove1 10s infinite ease-out;
+    transform: translateY(-500px) scale(1);
+    margin-top: 20px;
+}
+
+.name-2 {
+    font-size: 24px;
+    animation: userMove3 13s infinite linear;
+    transform: translateY(500px) scale(1);
+    margin-top: 100px;
+}
+
+.name-3 {
+    font-size: 32px;
+    animation: userMove2 15s infinite ease-in;
+    transform: translateY(-500px) scale(1);
+    margin-top: 200px;
+}
+
+.name-4 {
+    font-size: 64px;
+    animation: userMove1 20s infinite ease;
+    transform: translateY(-200px) scale(1);
+}
+
+.feel:after {
+    font-size: 10px;
+    color:#ea0e61;
+}
+
+.feel-0:after {
+    content: ":D";
+}
+.feel-1:after {
+    content: ":)";
+}
+.feel-2:after {
+    content: "°ο°";
+}
+.feel-3:after {
+    content: "::>_<::";
+}
+
+// user wall animation
+
+@keyframes userMove1 {
+    // 0% {
+    //     transform: translateY(-100px) scale(1);
+    //     // opacity: 1;
+    // }
+
+    20% {
+        transform: translateY(200px) scale(1.5);
+    }
+
+    60% {
+        transform: translateY(500px) scale(2);
+    }
+
+    80% {
+        transform: translateY(800px) scale(0.8);
+    }
+
+    100% {
+        transform: translateY(1000px) scale(1);
+    }
+}
+
+@keyframes userMove2 {
+    // 0% {
+    //     transform: translateY(-200px) scale(0.8);
+    //     opacity: 1;
+    // }
+
+    20% {
+        transform: translateY(200px) scale(1.2);
+    }
+
+    60% {
+        transform: translateY(600px) scale(2.5);
+    }
+
+    90% {
+        transform: translateY(900px) scale(0.8);
+    }
+
+    100% {
+        transform: translateY(1000px) scale(1.2);
+    }
+}
+
+@keyframes userMove3 {
+    // 0% {
+    //     transform: translateY(900px) scale(0.8);
+    //     opacity: 1;
+    // }
+    
+    20% {
+        transform: translateY(700px) scale(1.2);
+    }
+    
+    60% {
+        transform: translateY(300px) scale(3);
+    }
+    
+    100% {
+        transform: translateY(-100px) scale(1.8);
+    }
+}
