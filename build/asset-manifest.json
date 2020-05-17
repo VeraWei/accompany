@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/self-isolation-fun-front/static/css/main.79c9e23e.chunk.css",
-    "main.js": "/self-isolation-fun-front/static/js/main.53518d59.chunk.js",
-    "main.js.map": "/self-isolation-fun-front/static/js/main.53518d59.chunk.js.map",
+    "main.css": "/self-isolation-fun-front/static/css/main.a2202fb2.chunk.css",
+    "main.js": "/self-isolation-fun-front/static/js/main.9731f25a.chunk.js",
+    "main.js.map": "/self-isolation-fun-front/static/js/main.9731f25a.chunk.js.map",
     "runtime-main.js": "/self-isolation-fun-front/static/js/runtime-main.95bd37bc.js",
     "runtime-main.js.map": "/self-isolation-fun-front/static/js/runtime-main.95bd37bc.js.map",
     "static/css/2.e03f0d08.chunk.css": "/self-isolation-fun-front/static/css/2.e03f0d08.chunk.css",
-    "static/js/2.a9465c0a.chunk.js": "/self-isolation-fun-front/static/js/2.a9465c0a.chunk.js",
-    "static/js/2.a9465c0a.chunk.js.map": "/self-isolation-fun-front/static/js/2.a9465c0a.chunk.js.map",
+    "static/js/2.0b2bde93.chunk.js": "/self-isolation-fun-front/static/js/2.0b2bde93.chunk.js",
+    "static/js/2.0b2bde93.chunk.js.map": "/self-isolation-fun-front/static/js/2.0b2bde93.chunk.js.map",
     "index.html": "/self-isolation-fun-front/index.html",
-    "precache-manifest.c94efc6581d0dec845cad92158d22afb.js": "/self-isolation-fun-front/precache-manifest.c94efc6581d0dec845cad92158d22afb.js",
+    "precache-manifest.bd3fc1f1d761ee8c0daa87e9f5857c3a.js": "/self-isolation-fun-front/precache-manifest.bd3fc1f1d761ee8c0daa87e9f5857c3a.js",
     "service-worker.js": "/self-isolation-fun-front/service-worker.js",
     "static/css/2.e03f0d08.chunk.css.map": "/self-isolation-fun-front/static/css/2.e03f0d08.chunk.css.map",
-    "static/css/main.79c9e23e.chunk.css.map": "/self-isolation-fun-front/static/css/main.79c9e23e.chunk.css.map",
-    "static/js/2.a9465c0a.chunk.js.LICENSE.txt": "/self-isolation-fun-front/static/js/2.a9465c0a.chunk.js.LICENSE.txt",
+    "static/css/main.a2202fb2.chunk.css.map": "/self-isolation-fun-front/static/css/main.a2202fb2.chunk.css.map",
+    "static/js/2.0b2bde93.chunk.js.LICENSE.txt": "/self-isolation-fun-front/static/js/2.0b2bde93.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/self-isolation-fun-front/static/media/logo.8382dbf3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.95bd37bc.js",
     "static/css/2.e03f0d08.chunk.css",
-    "static/js/2.a9465c0a.chunk.js",
-    "static/css/main.79c9e23e.chunk.css",
-    "static/js/main.53518d59.chunk.js"
+    "static/js/2.0b2bde93.chunk.js",
+    "static/css/main.a2202fb2.chunk.css",
+    "static/js/main.9731f25a.chunk.js"
   ]
 }
