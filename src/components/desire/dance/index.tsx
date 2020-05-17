@@ -1,5 +1,6 @@
 import React from "react";
 import * as THREE from "three";
+import { Button } from "react-bootstrap";
 import { OutlineEffect } from "three/examples/jsm/effects/OutlineEffect.js";
 import { MMDLoader } from "three/examples/jsm/loaders/MMDLoader.js";
 import { MMDAnimationHelper } from "three/examples/jsm/animation/MMDAnimationHelper.js";
@@ -23,8 +24,8 @@ const scene = new THREE.Scene();
 const loader = new MMDLoader();
 const helper = new MMDAnimationHelper();
 
-const canvasWidth = window.innerWidth;
-const canvasHeight = window.innerHeight;
+const canvasWidth = window.innerWidth - 120;
+const canvasHeight = window.innerHeight - 400;
 
 class Dance extends React.Component {
     container: any;
@@ -113,7 +114,8 @@ class Dance extends React.Component {
             2000
         );
 
-        const bgColor = "linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);";
+        const bgColor =
+            "linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);";
         scene.background = new THREE.Color(bgColor);
 
         scene.add(
@@ -146,19 +148,15 @@ class Dance extends React.Component {
             }
         );
 
-        //
-
-        // window.addEventListener("resize", this.onWindowResize, false);
+        window.addEventListener("resize", this.onWindowResize, false);
     }
 
-    // onWindowResize = () => {
-    //     this.camera.aspect = canvasWidth / canvasHeight;
-    //     this.camera.updateProjectionMatrix();
+    onWindowResize = () => {
+        this.camera.aspect = canvasWidth / canvasHeight;
+        this.camera.updateProjectionMatrix();
 
-    //     this.effect.setSize(canvasWidth, canvasHeight);
-    // };
-
-    //
+        this.effect.setSize(canvasWidth, canvasHeight);
+    };
 
     animate = () => {
         requestAnimationFrame(this.animate);
@@ -182,13 +180,21 @@ class Dance extends React.Component {
         return <Footer hasBack={true} />;
     }
 
+    renderCanvas() {
+        return [
+            <div id="canvas-container"></div>,
+
+            <Button href="https://threejs.org" variant="link">
+                Credit to Three.js
+            </Button>,
+        ];
+    }
+
     render() {
         return (
             <div className="main-container">
                 {this.renderHeader()}
-                <div className="main-content">
-                    <div id="canvas-container"></div>
-                </div>
+                <div className="main-content">{this.renderCanvas()}</div>
                 {this.renderFooter()}
             </div>
         );
