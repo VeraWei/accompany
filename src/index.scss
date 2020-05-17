@@ -32,6 +32,25 @@ code {
     overflow: hidden;
 }
 
+
+@media only screen and (max-width: 600px) {
+    #root {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        * {
+            display: none;
+        }
+        
+        &::after {
+            content: "Oh, my dear friends, I don't want to write css too much, please use your computer.";
+            font-size: 48px;
+            color: red;
+        }
+    }
+}
+
 .main-container {
     padding: 20px;
 }

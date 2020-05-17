@@ -6,7 +6,7 @@
     left: 5%;
     right: 5%;
     bottom: 6%;
-    top: 10%;
+    top: 12%;
     border: 5px solid white;
     overflow: hidden;
     padding: 20px;
@@ -30,27 +30,27 @@
 
 .name-0 {
     font-size: 20px;
-    animation: userMove3 12s infinite ease-in;
+    animation: userMove3 11s infinite ease-in;
     transform: translateY(500px) scale(1);
 }
 
 .name-1 {
     font-size: 22px;
-    animation: userMove1 10s infinite ease-out;
+    animation: userMove1 13s infinite ease-out;
     transform: translateY(-500px) scale(1);
     margin-top: 20px;
 }
 
 .name-2 {
     font-size: 24px;
-    animation: userMove3 13s infinite linear;
+    animation: userMove3 15s infinite linear;
     transform: translateY(500px) scale(1);
     margin-top: 100px;
 }
 
 .name-3 {
     font-size: 32px;
-    animation: userMove2 15s infinite ease-in;
+    animation: userMove2 17s infinite ease-in;
     transform: translateY(-500px) scale(1);
     margin-top: 200px;
 }

@@ -118,6 +118,7 @@ class UserWall extends React.Component {
         const { content } = this.state;
         return (
             <div className="wall-contontent">
+                <h2>Thanks for stopping by!</h2>
                 {!content.length
                     ? this.renderPlaceholder()
                     : this.renderAnimation()}
