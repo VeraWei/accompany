@@ -6,7 +6,7 @@ class Emoji extends React.Component {
     render() {
         return (
             <div className="emojis">
-                <Link to="/fun-game" className="feel-container">
+                <Link to="/game" className="feel-container">
                     <span>Game</span>
                     <div className="feel">
                         <div className="face-1">
@@ -15,7 +15,7 @@ class Emoji extends React.Component {
                         </div>
                     </div>
                 </Link>
-                <Link to="/fun-recommend" className="feel-container">
+                <Link to="/recommend" className="feel-container">
                     <span>Recommendation</span>
                     <div className="feel">
                         <div className="face-2">
@@ -24,7 +24,7 @@ class Emoji extends React.Component {
                         </div>
                     </div>
                 </Link>
-                <Link to="/fun-dance" className="feel-container">
+                <Link to="/dance" className="feel-container">
                     <span>Dance</span>
                     <div className="feel">
                         <div className="face-5">
@@ -33,7 +33,7 @@ class Emoji extends React.Component {
                         </div>
                     </div>
                 </Link>
-                <Link to="/fun-user" className="feel-container">
+                <Link to="/user" className="feel-container">
                     <span>User</span>
                     <div className="blue feel">
                         <div className="face-6">
@@ -45,7 +45,7 @@ class Emoji extends React.Component {
                 {/* 
                 <li className="feel-container">
                     <Link
-                        to="/fun-dance"
+                        to="/dance"
                     >
                         <div className="feel">
                             <div className="face-3">
@@ -58,7 +58,7 @@ class Emoji extends React.Component {
 
                 <li className="feel-container">
                     <Link
-                        to="/fun-blood"
+                        to="/blood"
                     >
                         <div className="feel">
                             <div className="face-4">

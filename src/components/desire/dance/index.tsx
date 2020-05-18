@@ -114,9 +114,7 @@ class Dance extends React.Component {
             2000
         );
 
-        const bgColor =
-            "linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);";
-        scene.background = new THREE.Color(bgColor);
+        scene.background = new THREE.Color("white");
 
         scene.add(
             new THREE.PolarGridHelper(30, 10, 10, 10, undefined, undefined)
@@ -182,9 +180,9 @@ class Dance extends React.Component {
 
     renderCanvas() {
         return [
-            <div id="canvas-container"></div>,
+            <div key="canvas-1" id="canvas-container"></div>,
 
-            <Button href="https://threejs.org" variant="link">
+            <Button key="canvas-btn"  href="https://threejs.org" variant="link">
                 Credit to Three.js
             </Button>,
         ];

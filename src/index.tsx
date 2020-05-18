@@ -8,19 +8,19 @@ import "./index.scss";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router>
+        <Router basename="/self-isolation-fun-front">
             <Switch>
                 <Route
                     exact
-                    path="/self-isolation-fun-front"
+                    path="/"
                     component={Welcome}
                 />
-                <Route exact path="/fun-game" component={Game} />
-                <Route exact path="/fun-recommend" component={Recommend} />
-                <Route exact path="/fun-dance" component={Dance} />
-                {/* <Route exact path="/fun-blood" component={Blood} /> */}
-                {/* <Route exact path="/fun-read" component={Read} /> */}
-                <Route exact path="/fun-user" component={UserWall} />
+                <Route exact path="/game" component={Game} />
+                <Route exact path="/recommend" component={Recommend} />
+                <Route exact path="/dance" component={Dance} />
+                {/* <Route exact path="/blood" component={Blood} /> */}
+                {/* <Route exact path="/read" component={Read} /> */}
+                <Route exact path="/user" component={UserWall} />
             </Switch>
         </Router>
     </React.StrictMode>,

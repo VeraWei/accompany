@@ -15,7 +15,7 @@ class Footer extends React.Component<FooterProps> {
         const classNm = hasBack ? "has-back footer" : "footer";
         return (
             <div className={classNm}>
-                { hasBack && <Link to="/self-isolation-fun-front" className="back"> <span> Go Back</span></Link>}
+                { hasBack && <Link to="/" className="back"> <span> Go Back</span></Link>}
                 <ul>
                     <li>
                         <Button href="https://github.com/VeraWei" variant="link">GitHub</Button>
