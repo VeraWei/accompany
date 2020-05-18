@@ -8,7 +8,7 @@ import "./index.scss";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router basename="/self-isolation-fun-front">
+        <Router basename="/accompany">
             <Switch>
                 <Route
                     exact

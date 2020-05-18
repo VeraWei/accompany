@@ -1,10 +1,12 @@
-# self-isolation-fun-front
-Accompany Buddy front end. 
+# accompany
+
+Accompany Buddy front end.
 Having fun is the top mission.
 
 ## Stack
-- Typescript
-- Unit test
+
+-   Typescript
+-   Unit test
 
 ## Available Scripts
 
