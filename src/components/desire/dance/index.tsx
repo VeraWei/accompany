@@ -25,7 +25,7 @@ const loader = new MMDLoader();
 const helper = new MMDAnimationHelper();
 
 const canvasWidth = window.innerWidth - 120;
-const canvasHeight = window.innerHeight - 400;
+const canvasHeight = window.innerHeight - 350;
 
 class Dance extends React.Component {
     container: any;
