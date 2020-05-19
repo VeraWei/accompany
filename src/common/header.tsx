@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./index.scss";
 import logo from "./logo.png";
 class Header extends React.Component {
@@ -30,7 +31,7 @@ class Header extends React.Component {
         return (
             <div className="header">
                 <div className="left">
-                    <img src={logo} alt="" />
+                    <Link to="/" className="back"><img src={logo} alt="" /></Link>
                 </div>
                 {this.renderName()}
             </div>
