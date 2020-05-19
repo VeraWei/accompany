@@ -81,7 +81,7 @@ class UserWall extends React.Component {
         const url = HELPER_URL["USERS"];
         const content = await HTTP.Get({ url });
         this.setState({
-            content: content.users.concat(texts) || texts,
+            content: content.users || texts,
         });
     }
 
