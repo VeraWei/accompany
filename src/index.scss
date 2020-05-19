@@ -33,7 +33,7 @@ code {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #root {
         display: flex;
         align-items: center;
@@ -44,10 +44,14 @@ code {
         }
         
         &::after {
-            content: "Oh, my dear friend, I don't want to write css too much, please use your computer.";
+            content: "Oh, my dear friend, I don't want to write css too much, please use your computer to access.";
             font-size: 48px;
             color: red;
         }
+    }
+    .vex-overlay,
+    .vex.vex-theme-wireframe {
+        display: none;
     }
 }
 
