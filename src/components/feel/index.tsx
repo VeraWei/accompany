@@ -36,7 +36,7 @@ class Emoji extends React.Component {
                 <Link to="/user" className="feel-container">
                     <span>User</span>
                     <div className="blue feel">
-                        <div className="face-6">
+                        <div className="face-4">
                             <div className="eyes"></div>
                             <div className="mouth"></div>
                         </div>
