@@ -31,12 +31,13 @@ class Dance extends React.Component {
     container: any;
     mesh: any;
     camera: any;
-    scene: any;
     material: any;
     renderer: any;
     effect: any;
     helper: any;
     ready = false;
+    listener: any;
+    audio: any;
 
     componentDidMount() {
         Ammo().then((AmmoLib: any) => {
@@ -44,6 +45,10 @@ class Dance extends React.Component {
             this.init();
             this.animate();
         });
+    }
+
+    componentWillUnmount() {
+        this.audio.stop();
     }
 
     onProgress = (xhr: {
@@ -65,15 +70,15 @@ class Dance extends React.Component {
         new THREE.AudioLoader().load(
             audioFile,
             (buffer: any) => {
-                const listener = new THREE.AudioListener();
-                const audio = new THREE.Audio(listener).setBuffer(buffer);
+                this.listener = new THREE.AudioListener();
+                this.audio = new THREE.Audio(this.listener).setBuffer(buffer);
 
-                listener.position.z = 1;
+                this.listener.position.z = 1;
 
-                helper.add(audio, audioParams);
+                helper.add(this.audio, audioParams);
 
-                scene.add(audio);
-                scene.add(listener);
+                scene.add(this.audio);
+                scene.add(this.listener);
                 scene.add(this.mesh);
 
                 this.ready = true;
