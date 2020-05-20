@@ -38,6 +38,7 @@ class Dance extends React.Component {
     ready = false;
     listener: any;
     audio: any;
+    ani: any;
 
     componentDidMount() {
         Ammo().then((AmmoLib: any) => {
@@ -49,6 +50,7 @@ class Dance extends React.Component {
 
     componentWillUnmount() {
         this.audio.stop();
+        this.cancelAni();
     }
 
     onProgress = (xhr: {
@@ -162,9 +164,13 @@ class Dance extends React.Component {
     };
 
     animate = () => {
-        requestAnimationFrame(this.animate);
+        this.ani = requestAnimationFrame(this.animate);
         this.renderAnimation();
     };
+
+    cancelAni = () => {
+        cancelAnimationFrame(this.ani);
+    }
 
     renderAnimation() {
         if (this.ready) {
